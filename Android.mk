@@ -35,10 +35,4 @@ ifeq ($(TARGET_ARCH),arm)
   LOCAL_SDK_VERSION := 9
 endif
 include $(BUILD_STATIC_LIBRARY)
-
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := $(bzlib_files)
-LOCAL_MODULE := libbz
-LOCAL_CFLAGS += -O3 -DUSE_MMAP
-include $(BUILD_HOST_STATIC_LIBRARY)
+ 
